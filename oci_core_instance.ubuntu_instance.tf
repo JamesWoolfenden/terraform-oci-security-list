@@ -16,7 +16,7 @@ resource "oci_core_instance" "ubuntu_instance" {
   }
 
   instance_options {
-    are_legacy_imds_endpoints_disabled = true  
+    are_legacy_imds_endpoints_disabled = true
   }
 
   # metadata = {
