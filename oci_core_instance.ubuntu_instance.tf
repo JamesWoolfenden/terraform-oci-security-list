@@ -19,6 +19,9 @@ resource "oci_core_instance" "ubuntu_instance" {
     are_legacy_imds_endpoints_disabled = true
   }
 
+  launch_options {
+    is_pv_encryption_in_transit_enabled = true
+  }
   # metadata = {
   #     ssh_authorized_keys = file(var.public_key_path)
   # }

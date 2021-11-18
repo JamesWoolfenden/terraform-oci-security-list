@@ -1,3 +1,3 @@
-module "example" {
+module "security" {
   source = "../../"
 }
