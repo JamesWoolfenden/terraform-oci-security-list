@@ -2,11 +2,19 @@ resource "oci_core_security_list" "example" {
   compartment_id = oci_identity_compartment.tf-compartment.id
   vcn_id         = oci_core_vcn.test_vcn.id
   ingress_security_rules {
-    protocol  = var.ingress["protocol"]
-    source    = var.ingress["source"]
-    stateless = var.ingress["stateless"]
+    description = "First"
+    protocol    = var.ingress["protocol"]
+    source      = var.ingress["source"]
+    stateless   = var.ingress["stateless"]
   }
 
+
+  ingress_security_rules {
+    description = "Second"
+    protocol    = var.ingress["protocol"]
+    source      = var.ingress["source"]
+    stateless   = var.ingress["stateless"]
+  }
   # #Optional
   # defined_tags = {"Operations.CostCenter"= "42"}
   # display_name = var.security_list_display_name
