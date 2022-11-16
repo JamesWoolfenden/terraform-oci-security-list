@@ -63,14 +63,14 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cidr_blocks"></a> [cidr\_blocks](#input\_cidr\_blocks) | n/a | `list` | <pre>[<br>  "10.0.0.0/16"<br>]</pre> | no |
-| <a name="input_image_id"></a> [image\_id](#input\_image\_id) | n/a | `string` | `"ocid1.image.oc1.uk-london-1.aaaaaaaalksmnbf4dqawnwgws665c5eqcygqzn5eviqxosdq3nnuwbdbpimq"` | no |
+| <a name="input_cidr_blocks"></a> [cidr\_blocks](#input\_cidr\_blocks) | n/a | `list(string)` | n/a | yes |
+| <a name="input_image_id"></a> [image\_id](#input\_image\_id) | n/a | `string` | n/a | yes |
 | <a name="input_ingress"></a> [ingress](#input\_ingress) | n/a | `map` | <pre>{<br>  "protocol": "all",<br>  "source": "192.168.1.0/24",<br>  "stateless": true<br>}</pre> | no |
-| <a name="input_instance_name"></a> [instance\_name](#input\_instance\_name) | n/a | `string` | `"oracle-cloud-jgw-1"` | no |
-| <a name="input_public_key_path"></a> [public\_key\_path](#input\_public\_key\_path) | n/a | `string` | `"/Users/jameswoolfenden/.oci/dodge_public.pem"` | no |
+| <a name="input_instance_name"></a> [instance\_name](#input\_instance\_name) | n/a | `string` | n/a | yes |
+| <a name="input_public_key_path"></a> [public\_key\_path](#input\_public\_key\_path) | n/a | `string` | n/a | yes |
 | <a name="input_subnet_cidr_block"></a> [subnet\_cidr\_block](#input\_subnet\_cidr\_block) | n/a | `string` | `"10.0.0.0/24"` | no |
-| <a name="input_tenancy_id"></a> [tenancy\_id](#input\_tenancy\_id) | n/a | `string` | `"ocid1.tenancy.oc1..aaaaaaaaias5q6dgyfszqcanhgetihg5bri3r6mehrwzier2xs3apa3r2yea"` | no |
-| <a name="input_user_ocid"></a> [user\_ocid](#input\_user\_ocid) | n/a | `string` | `"ocid1.user.oc1..aaaaaaaamvmqbxgd5ul6ji5i5exf3xmx3uhjdht6zqcnqri7pjxlzhurto4a"` | no |
+| <a name="input_tenancy_id"></a> [tenancy\_id](#input\_tenancy\_id) | n/a | `string` | n/a | yes |
+| <a name="input_user_ocid"></a> [user\_ocid](#input\_user\_ocid) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
@@ -132,11 +132,3 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
-[twitter]: https://twitter.com/JimWoolfenden
-[share_twitter]: https://twitter.com/intent/tweet/?text=terraform-oci-security-list&url=https://github.com/JamesWoolfenden/terraform-oci-security-list
-[share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-oci-security-list&url=https://github.com/JamesWoolfenden/terraform-oci-security-list
-[share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-oci-security-list
-[share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-oci-security-list
-[share_email]: mailto:?subject=terraform-oci-security-list&body=https://github.com/JamesWoolfenden/terraform-oci-security-list
