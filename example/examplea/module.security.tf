@@ -5,5 +5,5 @@ module "security" {
   user_ocid       = var.user_ocid
   image_id        = var.image_id
   cidr_blocks     = var.cidr_blocks
-  tenancy_id      = var.tenancy_id
+  tenancy_ocid    = var.tenancy_ocid
 }

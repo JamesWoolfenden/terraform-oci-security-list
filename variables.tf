@@ -1,5 +1,6 @@
-variable "tenancy_id" {
-  type = string
+
+variable "tenancy_ocid" {
+  default = "ocid1.tenancy.oc1..aaaaaaaaias5q6dgyfszqcanhgetihg5bri3r6mehrwzier2xs3apa3r2yea"
 }
 
 variable "user_ocid" {
